@@ -1,6 +1,9 @@
 # API_de_Filmes_Uninter
 O intuito deste repositório é armazenar o projeto (atividade prática) da disciplina de Desenvolvimento Web - Back End da Faculdade Uninter.
 
+# Aluna: 
+Nathalia Escóssio Cavalcante - RU 4888825
+
 # **Projeto - API de Filmes**
 A Filmes API é uma API REST desenvolvida em Spring Boot, que permite gerenciar uma lista de filmes utilizando um banco de dados H2 em memória. A API suporta operações de criação, leitura, atualização e remoção (CRUD) de filmes, oferecendo endpoints para testes via Postman.
 
