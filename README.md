@@ -33,7 +33,7 @@ Este guia mostra como testar todos os métodos do CRUD da Filmes API na ordem co
 
 ## **2️⃣ Criar filmes (POST)**
 
-**Objetivo:** Inserir filmes para testar os demais métodos.
+**Objetivo:** A aplicação já vem com dois filmes cadastrados como exemplos. O objetivo deste método é inserir mais filmes para testar os demais métodos posteriormente.
 
 1. Endpoint: `POST http://localhost:8080/filmes`
 2. Headers: `Content-Type: application/json`
@@ -41,11 +41,11 @@ Este guia mostra como testar todos os métodos do CRUD da Filmes API na ordem co
 
 ```json
 {
-    "id": "1",
-    "titulo": "O Senhor dos Anéis",
-    "descricao": "A sociedade do anel inicia a jornada para destruir o Um Anel.",
-    "anoLancamento": 2001,
-    "genero": "Fantasia"
+   "id": "3",
+   "titulo": "Titanic",
+   "descricao": "Uma história de amor a bordo do navio Titanic.",
+   "anoLancamento": 1997,
+   "genero": "Romance"
 }
 ```
 
@@ -70,8 +70,8 @@ Este guia mostra como testar todos os métodos do CRUD da Filmes API na ordem co
 
 **Objetivo:** Testar a busca individual.
 
-1. Escolha um ID de filme que você criou (ex: `1`).
-2. Endpoint: `GET http://localhost:8080/filmes/1`
+1. Escolha um ID de filme que você criou (ex: `3`).
+2. Endpoint: `GET http://localhost:8080/filmes/3`
 3. Clique em **Send**.
 4. Confirme que a resposta contém apenas aquele filme.
 5. Teste também um ID inexistente (ex: `999`) para ver o retorno `404 Not Found`.
@@ -82,17 +82,17 @@ Este guia mostra como testar todos os métodos do CRUD da Filmes API na ordem co
 
 **Objetivo:** Alterar informações de um filme existente.
 
-1. Escolha um ID de filme existente (ex: `1`).
-2. Endpoint: `PUT http://localhost:8080/filmes/1`
+1. Escolha um ID de filme existente (ex: `4`).
+2. Endpoint: `PUT http://localhost:8080/filmes/4`
 3. Headers: `Content-Type: application/json`
 4. Body (exemplo de atualização):
 
 ```json
 {
-    "titulo": "O Senhor dos Anéis - A Sociedade do Anel",
+    "titulo": "O Poderoso Chefão",
     "descricao": "Atualização da descrição do filme.",
-    "anoLancamento": 2001,
-    "genero": "Fantasia"
+    "anoLancamento": 1972,
+    "genero": "Crime"
 }
 ```
 
@@ -106,7 +106,7 @@ Este guia mostra como testar todos os métodos do CRUD da Filmes API na ordem co
 
 **Objetivo:** Remover filmes da base de dados.
 
-1. Escolha um ID de filme existente (ex: `3`).
+1. Escolha um ID de filme existente (ex: `5`).
 2. Endpoint: `DELETE http://localhost:8080/filmes/1`
 3. Clique em **Send**.
 4. O status retornado deve ser `204 No Content`.
